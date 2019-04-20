@@ -1,0 +1,309 @@
+@charset "UTF-8";
+
+@font-face {
+   font-family: Madeleina sans;
+   src:url("../font/Madeleina Sans.otf");
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Madeleina Sans;
+
+}
+
+a {
+	text-decoration: none;
+	
+
+}
+
+#name {
+	font-size: 55px;
+	letter-spacing: 9px;
+	text-align:center;
+}
+
+/* nav */
+nav {
+	text-decoration: none;
+	width: 100%;
+	height: 50px;
+	left: 0;
+	position: center;
+	background-color: #4BFFA5;
+}
+
+li {
+    float: left;
+	display: inline-block;
+	position:relative;
+	font-size: 20px;
+	letter-spacing: 1.6px;
+	padding: 14px;
+	margin-left: 11px;
+	
+
+}
+
+.anav {
+    color: black;
+	text-decoration: none;
+	background-color: #4BFFA5;
+	padding: 5px;
+	display: block;
+	
+}
+
+.anav:hover {
+	background-color: #C6C4C5;
+	padding: 5px;
+	display: block;
+	border-radius: 20%;
+	color: black;
+}
+
+.dropbtn {
+  background-color: #C6C4C5;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #C6C4C5;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/* home */
+
+.container {
+  position: absolute;
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  width: 100%;
+  right: 0;
+  left: 0;
+  display: block;
+}
+
+.centered {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+}
+
+#homepic {
+	
+	width: 35%;
+	height: 350px;
+}
+
+
+
+/* three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clear floats after columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.homebottom {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	left: 0;
+	display:block;
+	top: 650px;
+	padding-bottom: 40px;
+}
+
+.icon {
+	width: 50%;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+figcaption {
+	text-align: center;
+	font-size: 40px;
+	color: black;
+	text-decoration: none;
+}
+
+.big {
+	font-size: 40px;
+}
+
+#hr {
+	width: 60%;
+}
+
+/* contact */
+#grad1 {
+  position: absolute;
+  z-index: -1;
+  margin-top: 100px;
+  left: 0;
+  right: 0;
+  height: auto;
+  background-color: #D1D1D1; /* For browsers that do not support gradients */
+  background-image: linear-gradient(white, #D1D1D1, black); 
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #1F1F1F;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #D1D1D1;
+  color: #1F1F1F;
+}
+
+.containerform {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+/* about */
+
+.body {
+	width: 90%;
+	margin-top: 140px; 
+	font-size: 20px;
+}
+
+#me {
+	background-color: #040F3D;
+	width: 30%;
+	height:auto;
+	border-radius: 40%;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 50px;
+}
+
+#about {
+	font-size: 50px;
+}
+
+#aboutp {
+	line-height: 1.5;
+	font-size: 25px;
+	letter-spacing: 2px;
+}
+
+/* portfolio */
+.pbody {
+	width: 100%;
+	height: auto;
+	margin-top: 100px;
+}
+
+.ph1 {
+	font-size: 50px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #4BFFA5;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.img {
+	width: 100%;
+	height: 200px;
+}
+
+.left {
+	width: 30%;
+	height: 250px;
+	padding-left: 10%;
+	float: left;
+	margin-bottom: 100px;
+}
+
+.video {
+	width: 90%;
+	height: auto;
+}
+
+/* experiences */
+
+#tudublin {
+		width: 35%;
+		height: 420px;
+}
+
+/* footer */
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: #1F1F1F;
+	color: white;
+	text-align: center;
+}
